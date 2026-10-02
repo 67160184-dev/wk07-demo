@@ -24,7 +24,7 @@
 - [ ] Requirement Analysis - ส่วน: -
 - [x] Database Design - ส่วน: ร่าง ER Diagram (`wk07-er-diagram.png`) และ `wk07-schema.sql`
 - [ ] System Architecture - ส่วน: -
-- [] Document/Grammar Check - ส่วน: -
+- [ ] Document/Grammar Check - ส่วน: -
 - [x] อื่นๆ: เขียน `menuModel.js`, `orderModel.js` และปรับ `orderController.js`, `README.md` ของ Sprint 1 ให้ตรง schema ใหม่ รวมทั้งทดสอบ import schema และ API กับ MySQL 8.0 (Docker)
 
 ### 4. Prompt ที่ใช้ (ตัวอย่าง):
