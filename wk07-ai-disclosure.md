@@ -8,8 +8,8 @@
 **รายละเอียด:** Workshop ครั้งนี้ผมใช้ Claude (Claude Code) เป็นผู้ช่วยหลักครับ โดยให้มันอ่านโจทย์ (`wk07.md`, rubric, case study และ Class Diagram ของ wk06) แล้วสรุปให้ก่อนว่าต้องส่งอะไรบ้าง จากนั้นผมสั่งให้ลงมือทำตามขั้นตอนใน Workshop ทั้ง 7 ข้อ
 
 ส่วนที่ให้ AI ช่วยร่างให้ คือ
-- ER Diagram (`wk07-er-diagram.md` และ `.png`) กับ `wk07-schema.sql` พร้อมข้อมูลจำลอง 2 สาขา
-- Model 2 ตัว (`menuModel.js`, `orderModel.js`) และการแก้โค้ด Sprint 1 ใน repo ให้ใช้ schema ใหม่ ตามขั้นตอนที่ 5 (`schema.sql`, `orderController.js`, `orderRoutes.js`, `README.md`)
+- ER Diagram (`wk07-er-diagram.png`) กับ `wk07-schema.sql`
+- Model 2 ตัว (`menuModel.js`, `orderModel.js`) และการแก้โค้ด Sprint 1 ใน repo ให้ใช้ schema ใหม่ ตามขั้นตอนที่ 5 (`schema.sql`, `orderController.js`, `README.md`)
 - ทดสอบ import schema (2 รอบ) และยิง API ผ่าน MySQL ใน Docker แล้วลบ container ทดสอบทิ้ง
 
 
@@ -22,10 +22,10 @@
 ### 3. งานส่วนไหนใช้ AI:
 
 - [ ] Requirement Analysis - ส่วน: -
-- [x] Database Design - ส่วน: ร่าง ER Diagram (`wk07-er-diagram.md`/`.png`) และ `wk07-schema.sql` พร้อมข้อมูลจำลอง
+- [x] Database Design - ส่วน: ร่าง ER Diagram (`wk07-er-diagram.png`) และ `wk07-schema.sql`
 - [ ] System Architecture - ส่วน: -
-- [x] Document/Grammar Check - ส่วน: ร่างเอกสารประกอบ ER Diagram และงานเดี่ยว `wk07-67160184.md`
-- [x] อื่นๆ: เขียน `menuModel.js`, `orderModel.js` และปรับ `orderController.js`, `orderRoutes.js`, `README.md` ของ Sprint 1 ให้ตรง schema ใหม่ รวมทั้งทดสอบ import schema และ API กับ MySQL 8.0 (Docker)
+- [x] Document/Grammar Check - ส่วน: ร่างงานเดี่ยว `wk07-67160184.md`
+- [x] อื่นๆ: เขียน `menuModel.js`, `orderModel.js` และปรับ `orderController.js`, `README.md` ของ Sprint 1 ให้ตรง schema ใหม่ รวมทั้งทดสอบ import schema และ API กับ MySQL 8.0 (Docker)
 
 ### 4. Prompt ที่ใช้ (ตัวอย่าง):
 

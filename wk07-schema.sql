@@ -78,24 +78,3 @@ CREATE TABLE stock_movement (
   moved_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
   FOREIGN KEY (menu_id) REFERENCES menu_item(menu_id)
 );
-
--- ---------- ข้อมูลจำลองสำหรับทดสอบ (2 สาขา) ----------
-INSERT INTO category (name) VALUES ('เครื่องดื่มร้อน'), ('เครื่องดื่มเย็น'), ('เบเกอรี่');
-
-INSERT INTO branch (name, address) VALUES
-  ('Brew Haven สาขาบางแสน', '123 ถ.บางแสน'),
-  ('Brew Haven สาขามหาวิทยาลัย', '456 ถ.มหาวิทยาลัย');
-
-INSERT INTO employee (branch_id, name, role) VALUES
-  (1, 'สมชาย', 'cashier'),
-  (1, 'สมหญิง', 'barista'),
-  (2, 'มานะ', 'cashier'),
-  (2, 'มานี', 'barista');
-
-INSERT INTO menu_item (branch_id, category_id, name, price, stock_quantity) VALUES
-  (1, 1, 'อเมริกาโน่', 45.00, 50),
-  (1, 2, 'ลาเต้เย็น', 55.00, 50),
-  (1, 3, 'ครัวซองต์', 35.00, 30),
-  (2, 1, 'อเมริกาโน่', 45.00, 50),
-  (2, 2, 'ลาเต้เย็น', 55.00, 50),
-  (2, 3, 'ครัวซองต์', 35.00, 30);

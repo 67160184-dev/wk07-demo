@@ -18,19 +18,3 @@ exports.findById = async (menuId, conn = db) => {
   );
   return rows[0] || null;
 };
-
-exports.create = async ({ branchId, categoryId, name, price, stockQuantity = 0 }) => {
-  const [result] = await db.query(
-    "INSERT INTO menu_item (branch_id, category_id, name, price, stock_quantity) VALUES (?, ?, ?, ?, ?)",
-    [branchId, categoryId, name, price, stockQuantity],
-  );
-  return result.insertId;
-};
-
-exports.updatePrice = async (menuId, price) => {
-  const [result] = await db.query(
-    "UPDATE menu_item SET price = ? WHERE menu_id = ?",
-    [price, menuId],
-  );
-  return result.affectedRows > 0;
-};
